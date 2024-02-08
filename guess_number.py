@@ -15,6 +15,9 @@ while max_guesses > 0:
             print("Congratulations! You guessed the right number.")
             break  # Exit the loop if the guess is correct
         elif guess < number:
+            print("Incorrect. Your guess is too low. Try again.")
+        else:  # This means guess > number
+            print("Incorrect. Your guess is too high. Try again.")
             print("Incorrect. Your guess is too low.")
         else:  # This means guess > number
             print("Incorrect. Your guess is too high.")
